@@ -6,6 +6,12 @@ class Breakfast
   end
 end
 
+class AgeValidator
+  def old_enough?(age)
+    age > 18
+  end
+end
+
 class Greeter
   def greet_someone(name)
     "Hello there, #{name}"

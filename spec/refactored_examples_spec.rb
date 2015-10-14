@@ -13,6 +13,14 @@ describe Breakfast do
   end
 end
 
+describe AgeValidator do
+  let(:age_validator) { AgeValidator.new }
+
+  it "checks if you are older then 18" do
+    expect(age_validator.old_enough?(19)).to eql(true)
+  end
+end
+
 describe Greeter do
   let(:greeter) { Greeter.new }
 
